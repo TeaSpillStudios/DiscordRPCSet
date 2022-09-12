@@ -1,16 +1,5 @@
 import argparse, json 
 
-#static void UpdatePresence()
-#{
-#    DiscordRichPresence discordPresence;
-#    memset(&discordPresence, 0, sizeof(discordPresence));
-#    discordPresence.state = "main.nelua";
-#    discordPresence.details = "Project: TeaEngine";
-#    discordPresence.largeImageKey = "floppydisc1024";
-#    discordPresence.largeImageText = "NeoVim";
-#    Discord_UpdatePresence(&discordPresence);
-#}
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-s', '--state', default='Idling', dest='state', help='Set state', type=str)
