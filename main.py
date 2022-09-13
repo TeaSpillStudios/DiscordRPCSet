@@ -27,7 +27,3 @@ jsonData = json.dumps(data)
 jsonFile = open("/tmp/nvimrpc.json", "w")
 jsonFile.write(jsonData)
 jsonFile.close()
-
-print(f'State: {args.state}\nProject: {args.project}\nFile: {args.file}')
-
-print(f'\n{jsonData}')

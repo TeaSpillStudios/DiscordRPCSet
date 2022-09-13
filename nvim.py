@@ -3,7 +3,7 @@ import os, sys
 cwd = os.getcwd()
 
 if "GitHub" in cwd:
-    cwd = cwd.split("/")[-1]
+    cwd = cwd.split("/")[5]
 else:
     cwd = "Unknown"
 
