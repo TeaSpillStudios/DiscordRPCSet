@@ -7,6 +7,11 @@ if "GitHub" in cwd:
 else:
     cwd = "Unknown"
 
-os.system(f"python3 ~/bin/main.py -s Editting -f {sys.argv[1]} -p {cwd}")
-os.system(f"nvim {sys.argv[1]}")
+if len(sys.argv) < 2:
+    os.system(f"python3 ~/bin/main.py -s Editting -f Buffer -p {cwd}")
+    os.system(f"nvim")
+else:
+    os.system(f"python3 ~/bin/main.py -s Editting -f {sys.argv[1]} -p {cwd}")
+    os.system(f"nvim {sys.argv[1]}")
+
 os.system(f"python3 ~/bin/main.py -s Idling")
